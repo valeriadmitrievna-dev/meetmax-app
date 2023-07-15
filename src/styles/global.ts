@@ -15,5 +15,7 @@ export default createGlobalStyle`
     font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     line-height: 1.14;
+    background-color: ${({ theme }) => theme.background.default};
+    color: ${({ theme }) => theme.text.default};
   }
 `;
