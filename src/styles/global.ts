@@ -1,21 +1,34 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
-
   * {
     margin: 0;
     padding: 0;
-    outline: none;
     box-sizing: border-box;
+    outline: none;
   }
 
   body {
     min-height: 100vh;
-    font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
     font-size: 14px;
-    line-height: 1.14;
-    background-color: ${({ theme }) => theme.background.default};
-    color: ${({ theme }) => theme.text.default};
+    line-height: 1.2;
+    color: ${({ theme }) => theme.colors.text};
+    background-color: ${({ theme }) => theme.colors.background};
+    font-family: 'Rubik', sans-serif;
+  }
+
+  #root {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1440px;
   }
 `;
