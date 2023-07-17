@@ -1,9 +1,9 @@
 export interface Theme {
   colors: {
-    dark_00: string;
-    dark_01: string;
-    light_00: string;
-    light_01: string;
+    text: string;
+    secondaryText: string;
+    background: string;
+    secondaryBackground: string;
     primary: string;
     success_00: string;
     success_01: string;
