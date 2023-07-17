@@ -15,8 +15,8 @@ export default createGlobalStyle`
     overflow: hidden;
     font-size: 14px;
     line-height: 1.2;
-    color: ${({ theme }) => theme.colors.text};
-    background-color: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.text[100]};
+    background-color: ${({ theme }) => theme.colors.background[100]};
     font-family: 'Rubik', sans-serif;
   }
 

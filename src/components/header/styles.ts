@@ -29,7 +29,7 @@ export const LogoWrapper = styled.div`
 export const Logo = styled(LogoIcon)`
   width: 26px;
   height: 26px;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary[100]};
 `;
 
 export const LogoText = styled.span`
