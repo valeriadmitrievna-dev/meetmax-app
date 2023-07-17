@@ -10,10 +10,25 @@ export default createGlobalStyle`
 
   body {
     min-height: 100vh;
+    max-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
     font-size: 14px;
     line-height: 1.2;
     color: ${({ theme }) => theme.colors.dark_00};
     background-color: ${({ theme }) => theme.colors.light_00};
     font-family: 'Rubik', sans-serif;
+  }
+
+  #root {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1440px;
   }
 `;
