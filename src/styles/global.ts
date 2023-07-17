@@ -14,5 +14,6 @@ export default createGlobalStyle`
     line-height: 1.2;
     color: ${({ theme }) => theme.colors.dark_00};
     background-color: ${({ theme }) => theme.colors.light_00};
+    font-family: 'Rubik', sans-serif;
   }
 `;
