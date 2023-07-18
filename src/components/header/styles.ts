@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as LogoIcon } from "../../icons/logo.svg";
+import Select from '../popover/select';
 
 export const Wrapper = styled.header``;
 
@@ -16,7 +17,7 @@ export const AuthContent = styled.div`
   justify-content: space-between;
 `;
 
-export const LanguageSwitch = styled.div`
+export const LanguageSwitch = styled(Select)`
   margin-left: auto;
 `;
 

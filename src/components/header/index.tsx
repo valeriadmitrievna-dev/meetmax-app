@@ -1,5 +1,6 @@
 import { FC } from "react";
 import * as S from "./styles";
+import { LANGUAGES } from "../../utils/constants";
 
 interface Props {
   isAuth: boolean;
@@ -19,7 +20,7 @@ const Header: FC<Props> = ({ isAuth }) => {
             <span>user</span>
           </S.AuthContent>
         ) : (
-          <S.LanguageSwitch>language</S.LanguageSwitch>
+          <S.LanguageSwitch options={LANGUAGES} autoWidth />
         )}
       </S.Container>
     </S.Wrapper>

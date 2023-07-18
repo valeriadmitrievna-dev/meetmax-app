@@ -6,6 +6,11 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: none;
+
+    &::selection {
+      background-color: ${({theme}) => theme.colors.primary[300]};
+      color: ${({theme}) => theme.colors.background[100]};
+    }
   }
 
   body {
@@ -30,5 +35,21 @@ export default createGlobalStyle`
   .container {
     margin: 0 auto;
     max-width: 1440px;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .portal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 `;
