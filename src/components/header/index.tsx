@@ -20,7 +20,7 @@ const Header: FC<Props> = ({ isAuth }) => {
             <span>user</span>
           </S.AuthContent>
         ) : (
-          <S.LanguageSwitch options={LANGUAGES} autoWidth />
+          <S.LanguageSwitch value='EN' options={LANGUAGES} autoWidth disabled />
         )}
       </S.Container>
     </S.Wrapper>

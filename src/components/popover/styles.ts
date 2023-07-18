@@ -20,6 +20,11 @@ export const Title = styled.button<{ opened: string }>`
   &:hover {
     background-color: ${({ theme }) => theme.colors.background[300]};
   }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.8;
+  }
 `;
 
 export const Chevron = styled(ChevronDownIcon)`

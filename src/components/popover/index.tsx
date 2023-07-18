@@ -7,6 +7,7 @@ export interface PopoverProps {
   title: ReactNode;
   children?: (styles: CSSProperties) => ReactNode;
   autoWidth?: boolean;
+  disabled?: boolean;
   space?: number;
   className?: string;
 }
@@ -15,6 +16,7 @@ const Popover: FC<PopoverProps> = ({
   title,
   children,
   autoWidth,
+  disabled,
   space = 4,
   className,
 }) => {
@@ -74,6 +76,7 @@ const Popover: FC<PopoverProps> = ({
         opened={opened.toString()}
         className={className}
         onClick={open}
+        disabled={disabled}
       >
         {title}
         <S.Chevron />
