@@ -1,7 +1,8 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import CommonLayout from "../layouts/common";
-import AppLayout from "../layouts/app";
+import CommonLayout from "layouts/common";
+import AppLayout from "layouts/app";
 import PrivateRoute from "./private";
+import SignUpPage from "pages/signup";
 
 const useRouter = (isAuth: boolean) =>
   createBrowserRouter([
@@ -21,7 +22,7 @@ const useRouter = (isAuth: boolean) =>
           path: "signup",
           element: (
             <PrivateRoute isAllowed={!isAuth} redirectPath='/app'>
-              <>sign up</>
+              <SignUpPage />
             </PrivateRoute>
           ),
         },

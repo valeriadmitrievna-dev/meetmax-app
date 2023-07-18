@@ -8,8 +8,8 @@ export default createGlobalStyle`
     outline: none;
 
     &::selection {
-      background-color: ${({theme}) => theme.colors.primary[300]};
-      color: ${({theme}) => theme.colors.background[100]};
+      background-color: ${({ theme }) => theme.colors.primary[300]};
+      color: ${({ theme }) => theme.colors.background[100]};
     }
   }
 
@@ -26,7 +26,7 @@ export default createGlobalStyle`
   }
 
   #root {
-    min-height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -45,11 +45,28 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
+  input {
+    color: inherit;
+    font: inherit;
+    border: none;
+    background: transparent;
+  }
+
+  svg {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
   .portal {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
   }
 `;

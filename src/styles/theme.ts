@@ -8,7 +8,7 @@ export const light: Theme = {
       200: "#626F87",
       300: "#758196",
       400: "#8993A5",
-      500: "#9DA5B4",
+      500: "#D8DBE1",
     },
     background: {
       100: "#FFFFFF",
